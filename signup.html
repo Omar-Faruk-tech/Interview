@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Cleaners</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <style>
+        h1{
+            font-size: 20px;
+            color: black;
+            text-align: center;
+        }
+        h3{
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        input{
+            width: 80%;
+            padding: 8px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .submit{
+            margin-bottom: 30px;
+            width: 85%;
+            background-color: rgb(70, 138, 2);
+            color: white; 
+            font-weight: 700; 
+            font-size: 18px;
+        }
+        .submit:hover{
+            background-color: rgb(255, 0, 0);
+            cursor: pointer;
+        }
+        div{
+            text-align: left;
+            margin: auto;
+        }
+        h2{
+            font-size: 35px;
+            color: white;
+            padding: 30px 20px 0px 40px;
+
+
+        }
+        p{
+            font-size: 18px;
+            color: white;
+            font-weight: 700;
+            padding: 0px 0px 20px 30px;
+        }
+        input:placeholder-shown{
+            font-size: 15px;
+        }
+        .userIcon-wrapper{
+            color: rgb(48, 150, 124);
+            font-size: 120px;
+            background-color: rgb(221, 221, 221);
+            text-align: center;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            padding: 10px 10px 0px 10px;
+            margin-bottom: 200px;
+        }
+        .calendarIcon-wrapper{
+            color: rgb(48, 150, 124);
+            font-size: 120px;
+            background-color: rgb(221, 221, 221);
+            border-radius: 60px;
+            text-align: center;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            padding: 10px 10px 0px 10px;
+            margin-bottom: 200px;
+        }
+        .dollarIcon-wrapper{
+            color: rgb(48, 150, 124);
+            font-size: 120px;
+            background-color: rgb(221, 221, 221);
+            border-radius: 60px;
+            text-align: center;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            padding: 10px 10px 0px 10px;
+            margin-bottom: 200px;
+        }
+       .dot1, .dot2 .dot3{
+           align-items: center;
+           justify-content: center;
+       }
+       .iconTextHeader p{
+            width: 100%;
+            font-size: 20px;
+            text-align: center;
+            padding: 0px;
+            margin: 20px 0px 10px 0px;
+       }
+       .iconTextHeader{
+           text-align: center;
+           padding: 0px 20px;
+           margin: 0px;
+       }
+       h4{
+           padding-top: 40px;
+           text-align: center;
+           font-size: 30px;
+           color: black;
+       }
+        .customer1, .customer2{
+            border-top-left-radius: 50% 50%;
+            border-top-right-radius: 50% 50%;
+            border-bottom-left-radius: 50% 50%;
+            border-bottom-right-radius: 50% 50%;
+            border: 5px solid white;
+           }
+           .heroTop{
+            width: 100%; 
+            margin: auto; 
+            background-repeat: no-repeat; 
+            background-size: 100%;
+            background-image: url(/background\ image.jpg);
+           }
+           .formContainer{
+            float: right; 
+            width: 30%; 
+            align-items: center; 
+            background-color: rgb(0, 0, 0, 0.7); 
+            margin: 40px 70px 40px 20px; 
+            text-align: center;
+           }
+           .writeupContainer{
+            float: left; 
+            width: 35%; 
+            margin: 40px;
+           }
+           .iconSection{
+            width: 100%; 
+            height: 100%;
+            margin: 20px 0px 0px 0px; 
+            padding-top: 150px; 
+            text-align: center; 
+            display: flex; 
+            justify-content: center; 
+            background-color: white;
+           }
+           .customerFeedback{
+            width: 100%; 
+            margin-top: 20px; 
+            padding-top: 30px; 
+            display: flex;
+           }
+           .circle1, .circle2{
+            width: 30%; 
+            text-align: center;
+           }
+           .copyrightParagraph{
+            padding: 10px 200px;
+           }
+           .iconsubheader1, .iconsubheader2, .iconsubheader3{
+            color: black; 
+            padding: 0px; 
+            margin: 30px 0px 10px 0px;
+           }
+         
+
+
+    /*DESIGN FOR SCREENs WITH WIDTH OF 700px TO 1000px*/
+
+        @media(max-width:1000px){
+            h2{
+                font-size: 25px;
+                padding: 20px 20px 20px 20px;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .formContainer{
+                width: 40%;
+                margin: 20px 30px 20px 20px;
+            }
+            input{
+                padding: 4px;
+                margin: 5px;
+            }
+            .writeupContainer{
+            float: left; 
+            width: 40%; 
+            margin: 20px;
+           }
+           .iconsubheader1, .iconsubheader2, .iconsubheader3{
+            color: black; 
+            padding: 0px; 
+            margin: 30px 0px 10px 0px;
+           }
+            }
+    /*DESIGN FOR SCREENS WITH WIDTH OF 700px TO 350px*/
+        @media(max-width:700px){
+            h1{
+                font-size: 15px;
+            }
+            .heroTop{
+                display: flex;
+                flex-direction: column;
+                background-image: url(/Background\ Small\ screen.jpg);
+                width: 100%;
+                height: 100%;
+                align-items: center;
+            }
+            .writeupContainer{
+            float: left; 
+            width: 80%; 
+            margin: 20px;
+           }
+           .formContainer{
+                width: 80%;
+                height: 100%;
+                margin: 0px 30px 0px 20px;
+            }
+            .iconSection{
+            width: 100%; 
+            margin-top: 20px; 
+            padding-top: 70px; 
+            text-align: center; 
+            display: flex; 
+            flex-direction: column; 
+           }
+           .userIcon-wrapper{
+               margin-bottom: 200px;
+           }
+           .calendarIcon-wrapper{
+                margin-bottom: 200px;
+           }
+           .dollarIcon-wrapper{
+                margin-bottom: 200px;
+           }
+           .customerFeedback{
+            width: 100%; 
+            margin-top: 20px; 
+            padding-top: 30px; 
+            display: flex;
+            flex-direction: column;
+           }
+           .circle1, .circle2{
+            width: 80%; 
+            text-align: center;
+            margin-bottom: 50px;
+           }
+           .copyrightParagraph{
+            padding: 10px 20px;
+            text-align: center;
+           }
+           .iconsubheader1, .iconsubheader2, .iconsubheader3{
+            color: black; 
+            font-size: 18px;
+            padding: 0px; 
+            margin: 30px 0px 10px 0px;
+            font-weight: 800;
+           }
+           h4{
+            padding-top: 20px;
+            text-align: center;
+            font-size: 20px;
+           }
+        }
+           /*DESIGN FOR SMALLEST SCREEN WIDTH (350px AND BELOW)*/
+        @media(max-width:350px){
+            h2{
+                font-size: 20px;
+                padding: 5px;
+                margin: 0px;
+            }
+            p{
+                padding: 5px;
+                margin: 0px;
+            }
+            h3{
+                font-size: 15px;
+            }
+            input{
+            width: 80%;
+            padding: 2px;
+            margin: 2px;
+            border-radius: 5px;
+        }
+        .submit{
+            font-size: 15px;
+            font-weight: 600;
+        }
+        }
+       
+
+    </style>
+
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <div class="topHeader" style="width: 100%; margin: 10px auto; background-color: white;">
+        <div  style="width: 50%; float: left; background-color: white;">
+            <h1>
+                Pro Cleaners
+            </h1>
+        </div>
+        <div style="width: 50%; float: left; background-color: white;">
+            <h1>
+                Phone: <a href="14002223000" target="_blank">1-400-222-3000 </a>
+            </h1>
+        </div>
+
+    </div>
+    <div class="heroTop">
+        <div class="writeupContainer">
+            <h2>
+                Vancouver's Best Home Cleaners
+            </h2>
+            <p>
+                Pro cleaners is Vancouver's best cleaning service. For the quality maid service 
+                Vancouver relies on, book one of our experienced, background checked professionals 
+                to have your home clean in no time.
+            </p>
+
+        </div>
+        <div class="formContainer">
+            <form action="" onsubmit="processForm()" name="bookingForm" id="bookingForm">
+                <h3>
+                    Request info & booking
+                </h3>
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" id="phone" placeholder="Your Phone" required>
+                <input class="submit" type="submit" value="Request info & booking">
+
+            </form>
+        </div>
+        
+        <div style="clear: both;">
+        </div>
+        <div class="iconSection">
+            <div class="userIcon-wrapper">            
+                <span class="dot dot1"><i class="fas fa-user"></i><p class="iconsubheader1">
+                    Trusted Professionals</p>
+                    <p style=" font-weight: 300; font-size: 15px; color: black; padding: 0px 0px 0px 0px; margin: 0px;">
+                        Our professionals are experienced, friendly and background checked</p>
+                 </span>      
+            </div>
+            <div class="calendarIcon-wrapper">            
+               <span class="dot dot2"><i class="far fa-calendar-alt"></i>
+                <p class="iconsubheader2">
+                    Available Everyday</p>
+                    <p style=" font-weight: 300; font-size: 15px; color: black; padding: 0px 0px 0px 0px; margin: 0px;">
+                        We're available to serve you seven days per week. We will work around your schedule</p>
+                    </span> 
+            </div>
+            <div class="dollarIcon-wrapper">            
+                <span class="dot dot3"><i class="fas fa-dollar-sign"></i>
+                    <p class="iconsubheader3">
+                    100% Money-back Guarantee</p>
+                    <p style=" font-weight: 300; font-size: 15px; color: black; padding: 0px 0px 100px 0px; margin: 0px;">
+                    If you're not satisfied, we'll refund all of your money. It's as simple as that</p>
+                    </span>
+            </div>
+         </div>
+         <div>
+        
+
+        </div>
+    
+    <div style="clear: both;">
+
+    </div>
+    <div style="width: 100%; background-color: rgb(221, 221, 221);">
+        <footer>
+            <h4>What our clients say</h4>
+            <div class="customerFeedback">
+                <div class="circle circle1">            
+                   <span><img class="customer1" src="/IMG-20170821-230659.jpg" width="150px" alt="Clientt's Image" 
+                    style="stroke: white; stroke-width: 10px;"> <p style="color: black;">Hussein Madina</p> 
+                    <hr> <p style="color: black;">The team was fast and friendly, Honestly my house
+                        hasn't been this clean in years</p><p>⭐⭐⭐⭐⭐</p> </span> 
+                </div>
+                <div class="circle circle2">            
+                    <span> <img class="customer2" src="/IMG-20191203-WA0005.jpg" width="150px" alt="Client's Image"> 
+                    <p style="color: black;">Olumide Alice</p> <hr> <p style="color: black;"> It feels so great walking into a fresh 
+                    apartment everyday. These guys makes my place spotless</p><p>⭐⭐⭐⭐⭐</p> </span>
+                </div>
+    
+        </footer>
+        <div style="background-color: rgb(78, 76, 76);">
+            <p class="copyrightParagraph">
+                © Copyright. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+    
+   <script>
+       function processForm() {
+           name = document.getElementById('name').value
+           email = document.getElementById('email').value
+           phone = document.getElementById('phone').value
+
+           alert('Thank you ' + name + '. - We will get back to you on your email (' + email + ') or on your phone (' + phone + ').')
+       }
+
+
+
+   </script>
+    
+</body>
+</html>
